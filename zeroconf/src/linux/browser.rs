@@ -84,7 +84,7 @@ impl TMdnsBrowser for AvahiMdnsBrowser {
                 ManagedAvahiServiceBrowserParams::builder()
                     .client(&(*self.context).client.as_ref().unwrap())
                     .interface(self.interface_index)
-                    .protocol(constants::AVAHI_PROTO_UNSPEC)
+                    .protocol(constants::AVAHI_PROTO_INET)
                     .kind(self.kind.as_ptr())
                     .domain(ptr::null_mut())
                     .flags(0)
