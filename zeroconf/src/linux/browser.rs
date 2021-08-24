@@ -187,7 +187,7 @@ fn handle_browser_new(
             .name(name)
             .kind(kind)
             .domain(domain)
-            .aprotocol(constants::AVAHI_PROTO_UNSPEC)
+            .aprotocol(constants::AVAHI_PROTO_INET)
             .flags(0)
             .callback(Some(resolve_callback))
             .userdata(raw_context)
